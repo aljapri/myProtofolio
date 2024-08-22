@@ -14,7 +14,7 @@ const ProjectCard = ({
   image,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div >
       <Tilt
         options={{
           max: 45,
@@ -42,13 +42,12 @@ const ProjectCard = ({
 const Certificates = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div>
         <h2 className={`${styles.sectionHeadText}`}>{"Certificates".toUpperCase()}</h2>
       </motion.div>
 
       <div className='w-full flex'>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
 These certifications demonstrate my proficiency and expertise across various technologies and domains. Each certificate is briefly described, highlighting the skills validated and the knowledge gained through rigorous assessments. The certifications reflect my commitment to continuous learning, professional growth, and my ability to apply this knowledge effectively in real-world scenarios.
